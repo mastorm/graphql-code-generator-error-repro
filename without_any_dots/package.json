@@ -1,0 +1,48 @@
+{
+  "name": "censored",
+  "version": "1.2.0",
+  "private": true,
+  "homepage": "./",
+  "dependencies": {
+    "graphql": "15.3.0"
+  },
+  "devDependencies": {
+    "@graphql-codegen/cli": "1.17.10",
+    "@graphql-codegen/typescript": "^1.17.10"
+  },
+  "scripts": {
+    "gen": "graphql-codegen"
+  },
+  "browserslist": {
+    "development": [
+      "last 2 chrome versions",
+      "last 2 firefox versions",
+      "last 2 edge versions",
+      "ie 11"
+    ],
+    "production": [
+      ">1%",
+      "last 4 versions",
+      "Firefox ESR",
+      "ie 11"
+    ]
+  },
+  "jest": {
+    "transformIgnorePatterns": [
+      "node_modules/?!(react-content-slots)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/{!(ignore-me),}.tsx",
+      "src/**/{!(ignore-me),}.ts"
+    ]
+  },
+  "ts-jest": {
+    "isolatedModules": true
+  },
+  "globals": {
+    "ts-jest": {
+      "isolatedModules": true
+    }
+  },
+  "informationalVersion": "1.2.0.1+devbuild.e1e19a6b"
+}

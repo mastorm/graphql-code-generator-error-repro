@@ -1,0 +1,11 @@
+
+type Absence {
+  absenceReasonId: ID!
+  changeUser: String
+  createUser: String!
+  daySegment: Int!
+  duration: Int
+  id: ID!
+  note: String
+  staffMemberId: ID
+}
